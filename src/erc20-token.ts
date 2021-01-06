@@ -2,7 +2,7 @@ import { BigInt, Address } from '@graphprotocol/graph-ts'
 import { ERC20 } from './abi/ERC20';
 
 export class ERC20Token {
-  contract;
+  contract: ERC20;
 
   constructor(tokenAddress: Address) {
     this.contract = ERC20.bind(tokenAddress)
